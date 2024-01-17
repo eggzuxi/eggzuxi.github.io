@@ -6,6 +6,7 @@ header {
   text-align: center;
   
   margin: 0;
+  perspective: 300px;
 }
 
 nav {
@@ -84,15 +85,16 @@ article {
 
 .search-box{
   display: inline-block;
+  margin: 20px;
 }
 
 .search-box input {
-  width: 500px; 
-  padding: 8px; 
+  width: 900px; 
+  padding: 10px; 
 }
 
 .search-box button {
-  padding: 8px; 
+  padding: 10px; 
 }
 
 h1{
@@ -100,9 +102,28 @@ h1{
   margin-left: 100px;
 }
 
+h1>a{
+  transform: translate();
+}
+
+header img {
+  width: 95px;
+  margin: 0;
+  transform: translate(1px, -30px) rotateY(0deg);
+  transition: transform 5s ease-in-out;
+}
+
+header img:hover {
+  transform: translate(200px, -30px) rotateY(3600deg);
+}
+
+
 .nav2{
   background-color: black;
-
+}
+.nav2 li{
+  margin-left: 30px;
+  float: left;
 }
 .menubutton{
   float: left;
@@ -126,7 +147,18 @@ footer {
   background-color: #3d3b3b;
   color: #aba7a7;
   padding: 10px;
-  position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+  .search-box input {
+      width: 100%; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-box input {
+      width: 100%; 
+  }
 }
