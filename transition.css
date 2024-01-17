@@ -1,0 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.product-list {
+  list-style: none;
+  float: left;
+}
