@@ -73,16 +73,6 @@ article {
   margin-bottom: 20px;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 .login{
   float: right;
 }
@@ -130,4 +120,13 @@ h1{
   box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
   position: relative;
   top:2px;
+}
+
+footer {
+  background-color: #3d3b3b;
+  color: #aba7a7;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
