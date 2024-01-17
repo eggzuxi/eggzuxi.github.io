@@ -4,12 +4,17 @@ body {
 
 header {
   text-align: center;
-  padding: 20px;
+  
+  margin: 0;
 }
 
 nav {
   border-bottom: 3px solid;
   padding: 10px;
+  height: 20px;
+  background-color: black;
+  border-radius: 20px;
+  margin: 10px;
 }
 
 nav ul {
@@ -17,6 +22,7 @@ nav ul {
   margin: 0;
   padding: 0;
   text-align: center;
+  background-color:;
 }
 
 nav li {
@@ -27,6 +33,7 @@ nav li {
 nav a {
   text-decoration: none;
   transition: color 0.3s; 
+  color: white;
 }
 
 nav a:hover {
@@ -90,4 +97,9 @@ footer {
 h1{
   float: left;
   margin-left: 100px;
+}
+
+.nav2{
+  background-color: black;
+  
 }
