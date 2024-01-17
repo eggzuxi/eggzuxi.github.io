@@ -102,8 +102,9 @@ h1{
   margin-left: 100px;
 }
 
-h1>a{
-  transform: translate();
+h1 a{
+  height: 0;
+  width: 0;
 }
 
 header img {
@@ -120,11 +121,25 @@ header img:hover {
 
 .nav2{
   background-color: black;
+  height: 40px;
 }
 .nav2 li{
   margin-left: 30px;
   float: left;
 }
+
+.nav2 a {
+  color: white;
+  text-decoration: none;
+  transition: font-size 0.5s;
+  line-height: 40px;
+}
+
+.nav2 a:hover {
+  color: #00FF00;
+  font-size: 25px;
+}
+
 .menubutton{
   float: left;
   margin-left: 20px;
@@ -151,13 +166,13 @@ footer {
   width: 100%;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1024px) {
   .search-box input {
       width: 100%; 
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
   .search-box input {
       width: 100%; 
   }
