@@ -233,3 +233,8 @@ color: black;}
 main{
   background-color: #474444;
 }
+
+article span{
+  color: red;
+  font-size: x-large;
+}
