@@ -22,7 +22,6 @@ nav ul {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color:;
 }
 
 nav li {
@@ -40,19 +39,31 @@ nav a:hover {
   color: #00FF00; 
 }
 
-.dropdown {
-  position: relative;
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #444;
-  min-width: 160px;}
+  background-color: #585252;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #454040;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+
 
 main {
   padding: 20px;
@@ -101,5 +112,22 @@ h1{
 
 .nav2{
   background-color: black;
+
+}
+.menubutton{
+  float: left;
+  margin-left: 20px;
+  border-radius: 25px;
+  width: 100px;
+  height: 20px;
+  background-color: black;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 4px 0 rgb(0,0,0,0.5);
   
+}
+.menubutton:active{
+  box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+  position: relative;
+  top:2px;
 }
