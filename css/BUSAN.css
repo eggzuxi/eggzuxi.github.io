@@ -140,6 +140,12 @@ header img:hover {
   font-size: 25px;
 }
 
+@media screen and (max-width:426px){
+  .hidden {
+    visibility: hidden;
+  }
+}
+
 .menubutton{
   float: left;
   margin-left: 20px;
@@ -158,28 +164,20 @@ header img:hover {
   top:2px;
 }
 
-footer {
-  background-color: #3d3b3b;
-  color: #aba7a7;
-  padding: 10px;
-  bottom: 0;
-  width: 100%;
-}
-
 @media screen and (max-width: 1024px) {
   .search-box input {
       width: 100%; 
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .search-box input {
-      width: 100%; 
+      width: 70%; 
   }
 }
 
 
-/* 여기서부터 부산 시작 */
+/* ------------------------------- 부 산 ---------------------------------*/
 
 
 article{
@@ -246,34 +244,77 @@ main article div p {
 main{
   background-color: #474444;
 }
-
-article span{
-  color: red;
-  font-size: x-large;
+@media screen and (max-width: 1024px) {
+  div>p.tourism>a>img {
+    float: left;
+    width: 313px;
+    height: 188px;
+    padding-left: 8px;
+    padding-top: 6px;
+  }
 }
 
-div>p.tourism>a>img {
-  float: left;
-  width: 313px;
-  height: 188px;
-  padding-left: 8px;
-  padding-top: 6px;
+@media screen and (max-width: 426px) {
+  div>p.tourism>a>img {
+    width: 50%;
+    padding-left: 8px;
+    padding-top: 6px;
+  }
 }
 
-div>p.meal>a>img {
-  float: right;
-  padding-right: 10px;
-  padding-top: 10px;
+@media screen and (max-width: 1024px) {
+  div>p.meal>a>img {
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
 }
 
-div>p.lodge>a>img {
-  float: left;
-  width: 313px;
-  height: 188px;
-  padding-left: 8px;
-  padding-top: 6px;
+@media screen and (max-width: 426px) {
+  div>p.meal>a>img {
+    width: 164px;
+    height: 188px;
+    padding-right: 8px;
+    padding-top: 6px;
+  }
 }
 
-#tourism,#meal,#lodge {
-  color: #5454a1;
+@media screen and (max-width: 1024px){
+  div>p.lodge>a>img {
+    float: left;
+    width: 313px;
+    height: 188px;
+    padding-left: 8px;
+    padding-top: 6px;
+  }
+}
+
+@media screen and (max-width: 426px){
+  div>p.lodge>a>img {
+    width: 50%;
+    padding-left: 8px;
+    padding-top: 6px;
+  }
+}
+
+@media all {
+  #tourism,#meal,#lodge {
+    color: #5454a1;
+  }
+}
+
+@media screen and (max-width: 426px){
+  .tourism, .meal, .lodge {
+    font-size:x-small;
+  } 
+}
+
+/* ---------------------- 푸 터 -------------------------*/
+
+footer {
+  background-color: #3d3b3b;
+  color: #aba7a7;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
 }
