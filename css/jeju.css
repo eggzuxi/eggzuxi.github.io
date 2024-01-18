@@ -97,10 +97,11 @@ article {
 }
 .search-box{
   display: inline-block;
+  width: 1100px;
   margin: 20px;
 }
 
-.search-box input {
+#search-input {
   width: 900px; 
   padding: 10px; 
 }
