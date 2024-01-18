@@ -344,7 +344,6 @@ i {
   z-index: 20;
 }
 
-
 /* ------------------ 실시간 환율 페이지 ----------------------- */
 
 .er-box {
@@ -386,8 +385,11 @@ i {
   float: left;
 }
 
-#box02 {
-  float: right;
+#box02 i{
+  float: left;
+  margin-left: 400px;
+  margin-top: 100px;
+  width: 50px;
 }
 
 #earth {
