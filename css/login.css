@@ -233,7 +233,7 @@ body {
 }
 
 #signup label {
-	float: left;  /* 왼쪽으로 배치 */
-	font-size: 13px;  /* 글자 크기 - 13px */
-	width: 110px;  /* 너비 - 110px */
+	float: left;  
+	font-size: 13px; 
+	width: 110px;  
 }

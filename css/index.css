@@ -110,7 +110,7 @@ h1 a{
 header img {
   width: 95px;
   margin: 0;
-  transform: translate(1px, -30px) rotateY(0deg);
+  transform: translate(1px, -20px) rotateY(0deg);
   transition: transform 5s ease-in-out;
 }
 
