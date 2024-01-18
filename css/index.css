@@ -186,11 +186,11 @@ footer {
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(to right bottom, #9ce49c, white);
+  /*background: linear-gradient(to right bottom, #ebedaf, white);*/
 }
 
 span {
-  color: green;
+  color: rgb(8, 97, 105);
   font-weight: bolder;
   font-size: large;
   text-shadow: 1.5px 0.5px 0 white;
