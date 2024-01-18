@@ -245,3 +245,24 @@ article span{
   font-size: x-large;
 }
 
+div>p.tourism>a>img {
+  float: left;
+  width: 313px;
+  height: 188px;
+  padding-left: 8px;
+  padding-top: 6px;
+}
+
+div>p.meal>a>img {
+  float: right;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+div>p.lodge>a>img {
+  float: left;
+  width: 313px;
+  height: 188px;
+  padding-left: 8px;
+  padding-top: 6px;
+}
