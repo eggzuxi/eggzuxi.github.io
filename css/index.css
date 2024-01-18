@@ -368,6 +368,17 @@ i {
   margin: 10px auto;
   padding: 10px;
 }
+@media screen and (max-width:426px) {
+  .er-box {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 95%;
+    height: 275px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+}
 
 .er-title {
   color: white;
@@ -383,6 +394,15 @@ i {
   margin: 10px;
   display: block;
 }
+@media screen and (max-width:426px){
+  .rate {
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 10px;
+    width: 380px;
+    display: block;
+  }
+}
 
 .rate span {
   color: white;
@@ -396,6 +416,7 @@ i {
 
 #box01 {
   float: left;
+  width: 60%;
 }
 
 #box02 i{
@@ -408,4 +429,10 @@ i {
 #earth {
   float: right;
   color: white;
+}
+
+@media screen and (max-width: 426px){
+  #earth {
+    visibility : hidden;
+  }
 }
