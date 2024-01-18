@@ -186,6 +186,7 @@ footer {
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  background: linear-gradient(to right bottom, #9ce49c, white);
 }
 
 span {
