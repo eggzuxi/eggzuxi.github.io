@@ -227,3 +227,13 @@ footer {
   border: 1px solid black;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 425px) {
+  .box {
+    font-size: 0.5rem;
+    font-weight: normal;
+  }
+  .hidden {
+    visibility: hidden;
+  }  
+}
