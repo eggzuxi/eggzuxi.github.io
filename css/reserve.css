@@ -246,3 +246,9 @@ body {
 .signup label{
   font-size: xx-large;
 }
+
+@media screen and (max-width:426px){
+  #reserve, #reserve01 {
+    width: 300px;
+  }
+}
