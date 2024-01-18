@@ -176,9 +176,9 @@ header img:hover {
   top:2px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .search-box input {
-      width: 100%; 
+      width: 70%; 
   }
 }
 
@@ -192,7 +192,7 @@ header img:hover {
 /* ------------------------------- 부 산 ---------------------------------*/
 
 
-@media screen and (min-width:425px) and (max-width: 1024px) {
+@media screen and (min-width:425px) and (max-width: 1200px) {
   article{
     border: 2px solid;
     width: 100%;
@@ -344,7 +344,7 @@ main article div p {
 main{
   background-color: #474444;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   div>p.tourism>a>img {
     float: left;
     width: 313px;
@@ -362,7 +362,7 @@ main{
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   div>p.meal>a>img {
     float: right;
     padding-right: 10px;
@@ -379,7 +379,7 @@ main{
   }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1200px){
   div>p.lodge>a>img {
     float: left;
     width: 313px;
