@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/index.css">
   <script src="https://kit.fontawesome.com/b7a8100195.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/NanumAmSeuTeReuDam.css" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
@@ -48,17 +49,84 @@
   </ul>
 
 </nav>
-
+<!-- 광고배너 및 상품 영역 -->
 <main>
-    <article>
-        <h2>제목</h2>
-        <p>내용</p>
-    </article>
-
-    <article>
-        <h2>제목</h2>
-        <p>내용</p>
-    </article>
+  <div class="ad">
+    <h1>휴식이 필요할 때, <br>오징어투어</h1>
+  </div>
+  <div class="product-container">
+    <h2>스마트 추천상품</h2>
+    <ul class="product-list">
+      <li>
+        <img src="images/jeju01.jpg" alt="">
+        <div class="product-button">
+          <div class="product-button-box">
+            <div class="button1">
+              <a href="page/JEJU.html"><i class="fab fa-searchengin fa-2x"></i></a>
+            </div>
+            <div class="button2">
+              <a href="page/reserve.html"><i class="fas fa-cart-shopping fa-xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-explain"><p><b>[에어카텔][2박3일] 제주도 그라벨호텔 자유여행
+          #호텔조식포함 #중형렌터카 #고급자차보험</b></p><p>▣ 그라벨호텔 (4성급)
+            - 2,3인실 : 더블+싱글베드
+            - 4인실 : 온돌(시티뷰)
+            - 키즈룸(2~4인) : 박당 2만원 추가</p></div>
+        <p class="product-price">301,000원</p>
+      </li>
+      <li>
+        <img src="images/busan01.jpg" alt="">
+        <div class="product-button">
+          <div class="product-button-box">
+            <div class="button1">
+              <a href="page/BUSAN.html"><i class="fab fa-searchengin fa-2x"></i></a>
+            </div>
+            <div class="button2">
+              <a href="page/reserve.html"><i class="fas fa-cart-shopping fa-xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-explain"><p><b>[KTX-호텔급] 부산 명소탐방 2일</b></p><p>▣ 5성 호텔 브랜드 조선호텔앤리조트</p></div>
+        <p class="product-price">274,000원</p>
+      </li>
+      <li>
+        <img src="images/japan01.jpg" alt="">
+        <div class="product-button">
+          <div class="product-button-box">
+            <div class="button1">
+              <a href="page/JAPAN.html"><i class="fab fa-searchengin fa-2x"></i></a>
+            </div>
+            <div class="button2">
+              <a href="page/reserve.html"><i class="fas fa-cart-shopping fa-xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-explain"><p><b>오사카 3~4일 #베스트셀러 #가성비추천
+          일본 인기 명소를 구석구석 알차게 즐기는 베스트셀러 여행</b></p><p>▣미야코지마
+            업무 전용공간
+            일상생활을 위한 편의시설
+            훌륭한 숙소 위치</p></div>
+        <p class="product-price">749,000원</p>
+      </li>
+      <li>
+        <img src="images/vietnam01.jpg" alt="">
+        <div class="product-button">
+          <div class="product-button-box">
+            <div class="button1">
+              <a href="page/VIETNAM.html"><i class="fab fa-searchengin fa-2x"></i></a>
+            </div>
+            <div class="button2">
+              <a href="page/reserve.html"><i class="fas fa-cart-shopping fa-xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-explain"><p><b>알찬 일정만 꽉꽉 채운 [다낭 시내 관광] 다낭 안의 프랑스, 해발 1500M 정상에 세워진 [바나힐 테마파크 완전 정복]</b></p><p>전 일정 세계적인 호텔브랜드 'ACCOR' 계열 월드체인 5성급 호텔 숙박 [★★★★★]</p></div>
+        <p class="product-price">699,000원</p>
+      </li>
+    </ul>
+  </div>
 </main>
 
   <!----------------------------날 씨 정 보 ------------------------------>
@@ -86,7 +154,7 @@
 
   <!---------------------------- 환 율 정 보 --------------------------->
   <div class="er-box">
-      <div>
+      <div id="box01">
         <span class="er-title">실시간 환율 정보</span>
         <div class="rate japan">
           <input class="country" type="image" src="./images/icon01.jpg" alt="일본">
@@ -105,9 +173,10 @@
           <span>TWD 42.48</span> 
         </div>
       </div>
-      <div>
-        <i id="earth" class="fas fa-earth-americas"></i>
+      <div id="box02">
+        <i id="earth" class="fas fa-earth-americas fa-spin fa-10x"></i>
       </div>
+    
   </div>
 
     <!------------------------------ 푸 터 ------------------------------->
