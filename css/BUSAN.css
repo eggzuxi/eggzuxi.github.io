@@ -182,98 +182,101 @@ footer {
 /* 여기서부터 부산 시작 */
 
 
-article{
-  border: 2px solid;
-  width: 100%;
-  height: 1000px;
-  border-radius: 50px;
-  text-align: center;
-  background: url(../images/busan01.jpg);
-  background-size: cover;
+@media screen and (min-width:425px) and (max-width: 1024px) {
+  article{
+    border: 2px solid;
+    width: 100%;
+    height: 1000px;
+    border-radius: 50px;
+    text-align: center;
+    background: url(../images/busan01.jpg);
+    background-size: cover;
+  }
+  
+  article h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(8, 97, 105);
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: rgb(8, 97, 105);
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  h2>a:link {
+    color: rgb(8, 97, 105);
+  }
+  h2>a:visited {
+    color: rgb(8, 97, 105);
+  }
+  article a{
+    text-decoration: none;
+  }
+  
+  article div{
+    border: 2px solid rgb(8, 97, 105);
+    width: 90%;
+    height: 800px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  
+  article p{
+    border: 2px solid ;
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  main article div p {
+    background-color: rgba(255, 255, 255, 0.7); /* 배경색을 흰색으로 지정하고, 투명도를 0.7로 조절 */
+    font-weight: bold;
+    color: black;
+    border: 2px solid rgb(8, 97, 105);
+  }
+  
+  main{
+    background-color: #474444;
+  }
+  
+  article span{
+    color: red;
+    font-size: x-large;
+  }
+  
+  div>p.tourism>a>img {
+    float: left;
+    width: 313px;
+    height: 188px;
+    padding-left: 8px;
+    padding-top: 6px;
+  }
+  
+  div>p.meal>a>img {
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  
+  div>p.lodge>a>img {
+    float: left;
+    width: 313px;
+    height: 188px;
+    padding-left: 8px;
+    padding-top: 6px;
+  }
+  
+  #tourism,#meal,#lodge {
+    color: #5454a1;
+  }
 }
-
-article h2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid rgb(8, 97, 105);
-  width: 80%;
-  height: 100px;
-  border-radius: 10px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 10px;
-  color: rgb(8, 97, 105);
-  background-color: rgba(255, 255, 255, 0.7);
-}
-h2>a:link {
-  color: rgb(8, 97, 105);
-}
-h2>a:visited {
-  color: rgb(8, 97, 105);
-}
-article a{
-  text-decoration: none;
-}
-
-article div{
-  border: 2px solid rgb(8, 97, 105);
-  width: 90%;
-  height: 800px;
-  border-radius: 10px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 10px;
-}
-
-article p{
-  border: 2px solid ;
-  width: 90%;
-  height: 200px;
-  border-radius: 10px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-
-main article div p {
-  background-color: rgba(255, 255, 255, 0.7); /* 배경색을 흰색으로 지정하고, 투명도를 0.7로 조절 */
-  font-weight: bold;
-  color: black;
-  border: 2px solid rgb(8, 97, 105);
-}
-
-main{
-  background-color: #474444;
-}
-
-article span{
-  color: red;
-  font-size: x-large;
-}
-
-div>p.tourism>a>img {
-  float: left;
-  width: 313px;
-  height: 188px;
-  padding-left: 8px;
-  padding-top: 6px;
-}
-
-div>p.meal>a>img {
-  float: right;
-  padding-right: 10px;
-  padding-top: 10px;
-}
-
-div>p.lodge>a>img {
-  float: left;
-  width: 313px;
-  height: 188px;
-  padding-left: 8px;
-  padding-top: 6px;
-}
-
-#tourism,#meal,#lodge {
-  color: #5454a1;
-}
+  
