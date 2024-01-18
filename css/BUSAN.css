@@ -110,7 +110,7 @@ h1 a{
 header img {
   width: 95px;
   margin: 0;
-  transform: translate(1px, -30px) rotateY(0deg);
+  transform: translate(1px, -20px) rotateY(0deg);
   transition: transform 5s ease-in-out;
 }
 
@@ -122,7 +122,6 @@ header img:hover {
 .nav2{
   background-color: black;
   height: 40px;
-  margin-bottom: 0;
 }
 .nav2 li{
   margin-left: 30px;
@@ -180,9 +179,7 @@ footer {
 }
 
 
-
 /* 여기서부터 부산 시작 */
-
 
 
 article{
@@ -196,21 +193,25 @@ article{
 }
 
 article h2{
-  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(8, 97, 105);
   width: 80%;
   height: 100px;
   border-radius: 10px;
   text-align: center;
   margin: 0 auto;
   margin-top: 10px;
-  color: black;
+  color: rgb(8, 97, 105);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 article a{
   text-decoration: none;
 }
 
 article div{
-  border: 2px solid;
+  border: 2px solid rgb(8, 97, 105);
   width: 90%;
   height: 800px;
   border-radius: 10px;
@@ -220,7 +221,7 @@ article div{
 }
 
 article p{
-  border: 2px solid;
+  border: 2px solid ;
   width: 90%;
   height: 200px;
   border-radius: 10px;
@@ -230,10 +231,10 @@ article p{
 }
 
 main article div p {
-  background-color: rgba(255, 255, 255, 1); /* 배경색을 흰색으로 지정하고, 투명도를 0.7로 조절 */
+  background-color: rgba(255, 255, 255, 0.7); /* 배경색을 흰색으로 지정하고, 투명도를 0.7로 조절 */
   font-weight: bold;
-  color: green;
-  border: 2px solid black;
+  color: black;
+  border: 2px solid rgb(8, 97, 105);
 }
 
 main{
@@ -265,4 +266,8 @@ div>p.lodge>a>img {
   height: 188px;
   padding-left: 8px;
   padding-top: 6px;
+}
+
+#tourism,#meal,#lodge {
+  color: #5454a1;
 }
