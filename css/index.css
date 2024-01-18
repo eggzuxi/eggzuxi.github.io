@@ -193,7 +193,7 @@ span {
   color: green;
   font-weight: bolder;
   font-size: large;
-  text-shadow: 1.5px 0.5px 0 rgb(65, 63, 63);
+  text-shadow: 1.5px 0.5px 0 white;
 }
 
 a:visited{
