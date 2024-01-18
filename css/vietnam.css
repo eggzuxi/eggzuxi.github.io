@@ -256,3 +256,17 @@ article span{
   font-size: x-large;
 }
 
+@media screen and (min-width:425px) {
+  article h2{
+    height: 10%;
+    overflow: hidden;
+  }
+  article div{
+    overflow: hidden;
+  }
+  nav {
+    overflow: hidden;
+  }
+  }
+  
+  
