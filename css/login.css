@@ -214,7 +214,15 @@ body {
 	width: 400px;	
 	margin:30px auto;
 }
-		
+
+@media screen and (max-width:426px) {
+  #signup {
+    background:#fff;
+    border:1px solid #222;
+    border-radius: 5px;
+    width: 300px;	
+  }
+}
 #signup fieldset {
 	border: 1px solid #ccc;
 	margin-bottom: 30px;
