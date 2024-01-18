@@ -189,6 +189,9 @@ footer {
   .search-box input {
       width: 100%; 
   }
+  #unvisable {
+    visibility: hidden;
+  }
 }
 
 /* ------------------ 나라별 날씨 페이지 -----------------------*/
