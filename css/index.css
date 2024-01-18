@@ -1,0 +1,26 @@
+
+.weather {
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  color: green;
+  font-weight: bolder;
+  font-size: large;
+  text-shadow: 1.5px 0.5px 0 rgb(65, 63, 63);
+}
+
+a:visited{
+  color : green;
+}
+
+
+i {
+  padding-top: 3px;
+  padding-left: 5px;
+}
