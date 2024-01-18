@@ -110,7 +110,7 @@ h1 a{
 header img {
   width: 95px;
   margin: 0;
-  transform: translate(1px, -20px) rotateY(0deg);
+  transform: translate(1px, -30px) rotateY(0deg);
   transition: transform 5s ease-in-out;
 }
 
@@ -178,29 +178,62 @@ footer {
   }
 }
 
-/* ------------------ 나라별 날씨 페이지 -----------------------*/
-.weather {
-  border: 1px solid;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+	padding: 20px;	
 }
 
-span {
-  color: green;
-  font-weight: bolder;
-  font-size: large;
-  text-shadow: 1.5px 0.5px 0 rgb(65, 63, 63);
+#signup {
+	background:#fff;
+	border:1px solid #222;
+	border-radius: 5px;
+	padding: 20px;
+	width: 400px;	
+	margin:30px auto;
+}
+		
+#signup fieldset {
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+}
+		
+#signup legend {
+	font-size: 16px;
+	font-weight: bold;
+	padding-left:5px;
+	padding-bottom: 10px;	
+}
+			
+#signup ul li {
+	line-height: 30px;
+	list-style: none;
+	padding: 5px 10px;
+	margin-bottom: 2px;
+}
+			
+#signup button {	
+	border: 1px solid #222;
+	border-radius: 20px;
+	display: block;
+	font-size: 16px;
+	letter-spacing: 1px;
+	margin: auto;
+	padding: 7px 25px;
 }
 
-a:visited{
-  color : green;
-}
-
-
-i {
-  padding-top: 3px;
-  padding-left: 5px;
+#signup label {
+	float: left;  /* 왼쪽으로 배치 */
+	font-size: 13px;  /* 글자 크기 - 13px */
+	width: 110px;  /* 너비 - 110px */
 }
