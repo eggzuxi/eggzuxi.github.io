@@ -500,4 +500,7 @@ i {
     line-height: 34px;
     z-index: 20;
   }
+  .search-box input {
+    width: 200px;
+  }
 }
