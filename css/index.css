@@ -196,11 +196,11 @@ span {
   text-shadow: 1.5px 0.5px 0 white;
 }
 
-a:link {
+div i span a:link {
   color: rgb(8, 97, 105);
 }
 
-a:visited {
+div i span a:visited {
   color: rgb(8, 97, 105);
 }
 
