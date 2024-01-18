@@ -83,6 +83,19 @@ article {
   padding: 10px;
 }
 
+.logo img {
+  float: left;
+  margin-left: 30px;
+}
+.logo a p{
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
+}
+.logo p:link, .logo p:visited {
+  color: #000;
+}
 .search-box{
   display: inline-block;
   margin: 20px;
@@ -110,12 +123,12 @@ h1 a{
 header img {
   width: 95px;
   margin: 0;
-  transform: translate(1px, -20px) rotateY(0deg);
-  transition: transform 5s ease-in-out;
+  /* transform: translate(1px, -20px) rotateY(0deg);
+  transition: transform 5s ease-in-out; */
 }
 
 header img:hover {
-  transform: translate(200px, -30px) rotateY(3600deg);
+  /* transform: translate(200px, -30px) rotateY(3600deg); */
 }
 
 
@@ -397,3 +410,5 @@ i {
   float: right;
   color: white;
 }
+
+
