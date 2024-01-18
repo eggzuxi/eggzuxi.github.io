@@ -196,11 +196,11 @@ span {
   text-shadow: 1.5px 0.5px 0 white;
 }
 
-a:link {
+div i span a:link {
   color: rgb(8, 97, 105);
 }
 
-a:visited {
+div i span a:visited {
   color: rgb(8, 97, 105);
 }
 
@@ -209,6 +209,7 @@ i {
   padding-top: 3px;
   padding-left: 5px;
 }
+
 
 /* 광고배너 및 상품 영역 */
 .ad {
@@ -341,4 +342,57 @@ i {
   bottom: 0px;
   line-height: 68px;
   z-index: 20;
+}
+
+/* ------------------ 실시간 환율 페이지 ----------------------- */
+
+.er-box {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 95%;
+  height: 45vh;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.er-title {
+  color: white;
+  padding: 15px;
+}
+
+.rate {
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 10px;
+  width: 700px;
+  padding: 5px;
+  margin: 10px;
+  display: block;
+}
+
+.rate span {
+  color: white;
+}
+
+.country {
+  width: 30px;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+#box01 {
+  float: left;
+}
+
+#box02 i{
+  float: left;
+  margin-left: 400px;
+  margin-top: 100px;
+  width: 50px;
+}
+
+#earth {
+  float: right;
+  color: white;
 }
