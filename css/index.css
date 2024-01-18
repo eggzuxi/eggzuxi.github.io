@@ -186,13 +186,14 @@ footer {
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  background: linear-gradient(to right bottom, #9ce49c, white);
 }
 
 span {
   color: green;
   font-weight: bolder;
   font-size: large;
-  text-shadow: 1.5px 0.5px 0 rgb(65, 63, 63);
+  text-shadow: 1.5px 0.5px 0 white;
 }
 
 span a:visited{
