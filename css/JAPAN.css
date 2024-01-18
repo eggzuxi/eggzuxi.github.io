@@ -233,4 +233,7 @@ footer {
     font-size: 0.5rem;
     font-weight: normal;
   }
+  .hidden {
+    visibility: hidden;
+  }  
 }
