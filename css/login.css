@@ -248,3 +248,9 @@ body {
 	font-size: 13px; 
 	width: 110px;  
 }
+
+@media screen and (max-width:426px){
+  .search-box input{
+    width: 200px;
+  }
+}
