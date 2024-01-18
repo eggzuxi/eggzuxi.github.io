@@ -258,3 +258,22 @@ article span{
   font-size: x-large;
 }
 
+@media screen and (max-width:425px) {
+  article {
+    height: 1400px;
+  }
+  article p {
+    height: 350px;
+    margin-top: 70px;
+  }
+  .no-link-list {
+    opacity: 0;
+  }
+  .search-box input {
+    width: 200px;
+  }
+  .menubutton {
+    margin-left: 10px;
+    width: 30px;
+  }
+}
