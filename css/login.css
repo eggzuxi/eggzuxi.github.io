@@ -88,10 +88,11 @@ article {
   margin-left: 30px;
 }
 .logo a p{
-  font-size: 30px;
+  font-size: 50px;
   margin-top: 20px;
   margin-left: 20px;
   float: left;
+  font-family: 'NanumAmSeuTeReuDam';
 }
 .logo p:link, .logo p:visited {
   color: #000;
