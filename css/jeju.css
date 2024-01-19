@@ -259,7 +259,7 @@ article span{
   font-size: x-large;
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:426px) {
   article {
     height: 1400px;
   }
@@ -270,8 +270,14 @@ article span{
   .no-link-list {
     opacity: 0;
   }
+  .search-box {
+    width: 400px;
+    display: inline-block;
+  }
   .search-box input {
-    width: 200px;
+    width: 70%
+  /* .search-box input {
+    width: 100px; */
   }
   .menubutton {
     margin-left: 10px;
