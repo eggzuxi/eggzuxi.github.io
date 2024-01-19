@@ -256,17 +256,34 @@ article span{
   font-size: x-large;
 }
 
-@media screen and (min-width:425px) {
+@media screen and (max-width:426px) {
   article h2{
     height: 10%;
     overflow: hidden;
+    font-size: small;
   }
   article div{
     overflow: hidden;
+    font-size: small;
+    height: 850px;
   }
   nav {
     overflow: hidden;
   }
+  article p{
+    margin: 10px;
+  }
+  .search-box input{
+    width: 200px;
+  }
+  .nav1 button{
+    transform: translate(-40px, -3px);
   }
   
+  }
+  @media screen and (max-width:1025px){
+    .search-box input{
+      width: 200px;
+    }
+  }
   

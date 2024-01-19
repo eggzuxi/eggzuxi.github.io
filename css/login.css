@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
 }
 
 header {
@@ -190,10 +191,6 @@ footer {
   }
 }
 
-body {
-	padding: 20px;	
-}
-
 #signup {
 	background:#fff;
 	border:1px solid #222;
@@ -247,4 +244,10 @@ body {
 	float: left;  
 	font-size: 13px; 
 	width: 110px;  
+}
+
+@media screen and (max-width:426px){
+  .search-box input{
+    width: 200px;
+  }
 }
