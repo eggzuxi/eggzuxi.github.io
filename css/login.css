@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
 }
 
 header {
@@ -188,10 +189,6 @@ footer {
   .search-box input {
       width: 100%; 
   }
-}
-
-body {
-	padding: 20px;	
 }
 
 #signup {
