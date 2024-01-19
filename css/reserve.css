@@ -194,9 +194,7 @@ footer {
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ여기부터 reserve양식 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
 
-body {
-	padding: 20px;	
-}
+
 
 #reserve, .reserve {
 	background:#c8c3c3;
@@ -250,5 +248,8 @@ body {
 @media screen and (max-width:426px){
   #reserve, #reserve01 {
     width: 300px;
+  }
+  .search-box input{
+    width: 200px;
   }
 }
