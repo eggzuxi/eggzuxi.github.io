@@ -214,14 +214,6 @@ span {
   text-shadow: 1.5px 0.5px 0 white;
 }
 
-div i span a:link {
-  color: rgb(8, 97, 105);
-}
-
-div i span a:visited {
-  color: rgb(8, 97, 105);
-}
-
 
 i {
   padding-top: 3px;
@@ -397,17 +389,17 @@ i {
   width: 50vw;
   padding: 5px;
   margin-top: 10px;
-  display: flex;
+  /*display: flex;*/
 }
 @media screen and (max-width:426px){
   .rate {
     border: 1px solid white;
-  background-color: black;
-  border-radius: 10px;
-  width: 90vw;
-  padding: 5px;
-  margin-top: 10px;
-  display: flex;
+    background-color: black;
+    border-radius: 10px;
+    width: 90vw;
+    padding: 5px;
+    margin-top: 10px;
+    /*display: flex;*/
   }
 }
 
