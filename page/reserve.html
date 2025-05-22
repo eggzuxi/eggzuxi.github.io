@@ -1,0 +1,187 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reserve.css">
+    <script src="https://kit.fontawesome.com/b7a8100195.js" crossorigin="anonymous"></script>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/NanumAmSeuTeReuDam.css" rel="stylesheet">
+    <title>reserve</title>
+</head>
+<body>
+  <nav class="nav1">
+    <ul>
+        <li class="menubutton dropdown">
+            <button class="dropdown-btn"><i class="fas fa-grip-lines"></i></button>
+            <div class="dropdown-content">
+                <a href="#">해외여행</a>
+                <a href="#">국내여행</a>
+                <a href="#">항공권</a>
+                <a href="#">여행정보</a>
+            </div>
+        </li>
+        <li class="login"><a href="/page/login.html">로그인</a></li>
+        <li class="login"><a href="#">회원가입</a></li>
+    </ul>
+</nav>
+<header>
+    <div class="logo">
+        <a href="../index.html"><img src="/images/newjinger.jpg" alt=""><p>오징어투어</p></a>        
+    </div>
+    <div class="search-box">
+        <input type="text" placeholder="Search">
+        <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+</header>
+
+<nav class="nav2">
+  <ul>
+      <li><a href="/page/BUSAN.html">부산</a></li>
+      <li><a href="/page/JEJU.html">제주도</a></li>
+      <li><a href="/page/JAPAN.html">일본</a></li>
+      <li><a href="/page/VIETNAM.html">베트남</a></li>
+      <li><a href="#">타이완</a></li>
+      <li><a href="#">싱가포르</a></li>
+      <li><a href="#">말레이시아</a></li>
+  </ul>
+
+</nav>
+
+    <main>
+        <form action="reservated.html" autocomplete="on" class="reserve" id="reserve01">
+            <fieldset>
+                <legend>예매(1인)</legend>
+                <ul>
+                  <li>
+                    <label for="selcet">여행지선택</label>
+                    <select id="select" name="select" required>
+                      <option value="부산">부산</option>
+                  <option value="제주도">제주도</option>
+                  <option value="일본">일본</option>
+                  <option value="베트남">베트남</option>
+                  <option value="타이완">타이완</option>
+                  <option value="싱가포르">싱가포르</option>
+                  <option value="말레이시아">말레이시아</option>
+              </select>
+                  </li>
+  
+  
+                  <li>
+                    <label for="date">날짜선택</label>
+                    <input id="date" name="date" type="date">
+                    <input
+                      type="time"
+                      min="09:00"
+                      max="23:00"
+                      step="7200"
+                      required
+                  />
+                  </li>
+                  <li>
+                    <label for="airport">공항</label>
+                    <select name="airport" id="airport">
+                      <option value="김해공항">김해공항</option>
+                      <option value="가덕도신공항">가덕도신공항</option>
+                      <option value="김포공항">김포공항</option>
+                      <option value="인천국제공항">인천국제공항</option>
+                  </select>
+                  </li>  
+                  <li>
+                      <label for="selectPlace">성명</label>
+                  <input type="text" name="name" placeholder="김*현" required />
+                  </li>
+                  <li>
+                      <label for="selectPlace">전화번호</label>
+                      <input type="text" name="number" placeholder="010-****-****" required/>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <button type="submit"> 예매 </button> 
+              </fieldset>
+        </form>
+        
+
+<br><br>
+        <form id="reserve" class="signup">
+            <fieldset>
+                <fieldset>
+                  <legend>예매(2인)</legend>
+                  <ul>
+                    <li>
+                      <label for="selcet">여행지선택</label>
+                      <select id="select" name="select" required>
+                        <option value="부산">부산</option>
+                    <option value="제주도">제주도</option>
+                    <option value="일본">일본</option>
+                    <option value="베트남">베트남</option>
+                    <option value="타이완">타이완</option>
+                    <option value="싱가포르">싱가포르</option>
+                    <option value="말레이시아">말레이시아</option>
+                </select>
+                    </li>
+    
+    
+                    <li>
+                      <label for="date">날짜선택</label>
+                      <input id="date" name="date" type="date">
+                      <input
+                        type="time"
+                        min="09:00"
+                        max="23:00"
+                        step="7200"
+                        required
+                    />
+                    </li>
+                    <li>
+                      <label for="airport">공항</label>
+                      <select name="airport" id="airport">
+                        <option value="김해공항">김해공항</option>
+                        <option value="가덕도신공항">가덕도신공항</option>
+                        <option value="김포공항">김포공항</option>
+                        <option value="인천국제공항">인천국제공항</option>
+                    </select>
+                    </li>  
+                    <li>
+                        <label for="selectPlace">성명</label>
+                    <input type="text" name="name" placeholder="김*현" required />
+                    </li>
+                    <li>
+                        <label for="selectPlace">연락처</label>
+                        <input type="text" name="number" placeholder="010-****-****" required/>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset>
+                  <legend>동행자 정보</legend>
+                  <ul>
+                    <li>
+                      <label for="fullname">성명</label>
+                      <input id="fullname" name="fullname" type="text" placeholder="박*희" required>
+                    </li>
+                    <li>
+                      <label for="tel">연락처</label>
+                      <input id="tel" name="tel" type="tel" autocomplete="off" placeholder="010-****-****" required>
+                    </li>  
+                  </ul>
+                </fieldset>
+                <fieldset>
+                  <button type="submit"> 예매 </button> 
+                </fieldset>
+            </fieldset>
+          </form>
+
+        
+    </main>
+
+    <footer>
+        <p>오징어관광개발(주) | 대표이사: 김다현 | 주소: 05186 부산광역시 남구 용소로 45 창의관 3층 | 사업자등록번호 374-85-01469 | 관광협회 보증보험 15억원 | 배상책임보험 5억원 <br>
+통신판매업신고 2020-용소로-2111 | 사업자정보확인 | 관광사업자 등록번호 : 제1997-000001호 | 개인정보 관리책임자: IT지원 팀장 박주희<br>
+해외여행 1577-3000 국내여행 1577-3700 <br>
+오징어관광개발㈜는 개별 항공권과 호텔 단독 판매에 대하여 통신판매중개자로서 통신판매의 당사자가 아니며 해당 상품의 거래정보 및 거래 등에 대해
+책임을 지지 않습니다.
+<br><br>
+copyright © Ojingertour.com All rights reserved. Contact web master for more information.</p>
+    </footer>
+</body>
+</html>

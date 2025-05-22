@@ -1,0 +1,420 @@
+body {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  
+  margin: 0;
+  perspective: 300px;
+}
+
+nav {
+  border-bottom: 3px solid;
+  padding: 10px;
+  height: 20px;
+  background-color: black;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  transition: color 0.3s; 
+  color: white;
+}
+
+nav a:hover {
+  color: #00FF00; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #585252;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #454040;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+main {
+  padding: 20px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+.login{
+  float: right;
+}
+
+.nav1{
+  border-bottom: 0;
+  padding: 10px;
+}
+.logo img {
+  float: left;
+  margin-left: 30px;
+}
+.logo a p{
+  font-size: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
+  font-family: 'NanumAmSeuTeReuDam';
+}
+.logo p:link, .logo p:visited {
+  color: #000;
+}
+.search-box{
+  display: inline-block;
+  margin: 20px;
+}
+
+.search-box input {
+  width: 900px; 
+  padding: 10px; 
+}
+
+.search-box button {
+  padding: 10px; 
+}
+
+h1{
+  float: left;
+  margin-left: 100px;
+}
+
+h1 a{
+  height: 0;
+  width: 0;
+}
+
+header img {
+  width: 95px;
+  margin: 0;
+  /* transform: translate(1px, -20px) rotateY(0deg);
+  transition: transform 5s ease-in-out; */
+}
+
+header img:hover {
+  /* transform: translate(200px, -30px) rotateY(3600deg); */
+}
+
+
+.nav2{
+  background-color: black;
+  height: 40px;
+}
+.nav2 li{
+  margin-left: 30px;
+  float: left;
+}
+
+.nav2 a {
+  color: white;
+  text-decoration: none;
+  transition: font-size 0.5s;
+  line-height: 40px;
+}
+
+.nav2 a:hover {
+  color: #00FF00;
+  font-size: 25px;
+}
+
+@media screen and (max-width:426px){
+  .invisible {
+    visibility: hidden;
+  }
+}
+
+.menubutton{
+  float: left;
+  margin-left: 20px;
+  border-radius: 25px;
+  width: 100px;
+  height: 20px;
+  background-color: black;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 4px 0 rgb(0,0,0,0.5);
+  
+}
+.menubutton:active{
+  box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+  position: relative;
+  top:2px;
+}
+
+@media screen and (max-width: 1024px) {
+  .search-box input {
+      width: 100%; 
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .search-box input {
+      width: 70%; 
+  }
+}
+
+
+/* ------------------------------- 부 산 ---------------------------------*/
+
+
+
+  article{
+    border: 2px solid;
+    width: 100%;
+    height: 1000px;
+    border-radius: 50px;
+    text-align: center;
+    background: url(../images/busan01.jpg);
+    background-size: cover;
+  }
+  
+  article h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(8, 97, 105);
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: rgb(8, 97, 105);
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  h2>a:link {
+    color: rgb(8, 97, 105);
+  }
+  h2>a:visited {
+    color: rgb(8, 97, 105);
+  }
+  article a{
+    text-decoration: none;
+  }
+  
+  article div{
+    border: 2px solid rgb(8, 97, 105);
+    width: 90%;
+    height: 800px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  
+  article p{
+    border: 2px solid ;
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  main article div p {
+    background-color: rgba(255, 255, 255, 0.7); /* 배경색을 흰색으로 지정하고, 투명도를 0.7로 조절 */
+    font-weight: bold;
+    color: black;
+    border: 2px solid rgb(8, 97, 105);
+  }
+  
+  main{
+    background-color: #474444;
+  }
+  
+  article span{
+    color: red;
+    font-size: x-large;
+  }
+  
+  div>p.tourism>a>img {
+    float: left;
+    width: 313px;
+    height: 188px;
+    padding-left: 8px;
+    padding-top: 6px;
+  }
+  
+  div>p.meal>a>img {
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  
+  div>p.lodge>a>img {
+    float: left;
+    width: 313px;
+    height: 188px;
+    padding-left: 8px;
+    padding-top: 6px;
+  }
+  
+  #tourism,#meal,#lodge {
+    color: #5454a1;
+  }
+
+
+article h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(8, 97, 105);
+  width: 80%;
+  height: 100px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: rgb(8, 97, 105);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+h2>a:link {
+  color: rgb(8, 97, 105);
+}
+h2>a:visited {
+  color: rgb(8, 97, 105);
+}
+article a{
+  text-decoration: none;
+}
+
+article div{
+  border: 2px solid rgb(8, 97, 105);
+  width: 90%;
+  height: 800px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+article p{
+  border: 2px solid ;
+  width: 90%;
+  height: 200px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+main article div p {
+  background-color: rgba(255, 255, 255, 0.7); /* 배경색을 흰색으로 지정하고, 투명도를 0.7로 조절 */
+  font-weight: bold;
+  color: black;
+  border: 2px solid rgb(8, 97, 105);
+}
+
+main{
+  background-color: #474444;
+}
+
+
+  div>p.tourism>a>img {
+    float: left;
+    width: 313px;
+    height: 188px;
+    padding-left: 8px;
+    padding-top: 6px;
+  }
+
+@media screen and (max-width: 426px) {
+  div>p.tourism>a>img {
+    width: 50%;
+    padding-left: 8px;
+    padding-top: 6px;
+  }
+}
+
+
+  div>p.meal>a>img {
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+
+@media screen and (max-width: 426px) {
+  div>p.meal>a>img {
+    width: 164px;
+    height: 188px;
+    padding-right: 8px;
+    padding-top: 6px;
+  }
+}
+
+
+  div>p.lodge>a>img {
+    float: left;
+    width: 313px;
+    height: 188px;
+    padding-left: 8px;
+    padding-top: 6px;
+  }
+
+
+@media screen and (max-width: 426px){
+  div>p.lodge>a>img {
+    width: 50%;
+    padding-left: 8px;
+    padding-top: 6px;
+  }
+}
+
+@media all {
+  #tourism,#meal,#lodge {
+    color: #5454a1;
+  }
+}
+
+@media screen and (max-width: 426px){
+  .tourism, .meal, .lodge {
+    font-size:x-small;
+  } 
+}
+
+/* ---------------------- 푸 터 -------------------------*/
+
+footer {
+  background-color: #3d3b3b;
+  color: #aba7a7;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}

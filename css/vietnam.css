@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  
+  margin: 0;
+  perspective: 300px;
+}
+
+nav {
+  border-bottom: 3px solid;
+  padding: 10px;
+  height: 20px;
+  background-color: black;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  transition: color 0.3s; 
+  color: white;
+}
+
+nav a:hover {
+  color: #00FF00; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #585252;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #454040;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+main {
+  padding: 20px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+.login{
+  float: right;
+}
+
+.nav1{
+  border-bottom: 0;
+  padding: 10px;
+}
+.logo img {
+  float: left;
+  margin-left: 30px;
+}
+.logo a p{
+  font-size: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
+  font-family: 'NanumAmSeuTeReuDam';
+}
+.logo p:link, .logo p:visited {
+  color: #000;
+}
+.search-box{
+  display: inline-block;
+  margin: 20px;
+}
+
+.search-box input {
+  width: 900px; 
+  padding: 10px; 
+}
+
+.search-box button {
+  padding: 10px; 
+}
+
+h1{
+  float: left;
+  margin-left: 100px;
+}
+
+h1 a{
+  height: 0;
+  width: 0;
+}
+
+header img {
+  width: 95px;
+  margin: 0;
+  /* transform: translate(1px, -30px) rotateY(0deg);
+  transition: transform 5s ease-in-out; */
+}
+
+header img:hover {
+  /* transform: translate(200px, -30px) rotateY(3600deg); */
+}
+
+
+.nav2{
+  background-color: black;
+  height: 40px;
+  margin-bottom: 0;
+}
+.nav2 li{
+  margin-left: 30px;
+  float: left;
+}
+
+.nav2 a {
+  color: white;
+  text-decoration: none;
+  transition: font-size 0.5s;
+  line-height: 40px;
+}
+
+.nav2 a:hover {
+  color: #00FF00;
+  font-size: 25px;
+}
+
+.menubutton{
+  float: left;
+  margin-left: 20px;
+  border-radius: 25px;
+  width: 100px;
+  height: 20px;
+  background-color: black;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 4px 0 rgb(0,0,0,0.5);
+  
+}
+.menubutton:active{
+  box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+  position: relative;
+  top:2px;
+}
+
+footer {
+  background-color: #3d3b3b;
+  color: #aba7a7;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .search-box input {
+      width: 100%; 
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .search-box input {
+      width: 100%; 
+  }
+}
+
+
+
+/* 여기서부터 vietnam.ccs 시작 */
+
+
+
+article{
+  border: 2px solid;
+  width: 100%;
+  height: 1000px;
+  border-radius: 50px;
+  text-align: cente;
+  background: url(/images/vietnam01.jpg);
+  background-size: cover;
+}
+
+article h2{
+  border: 2px solid;
+  width: 80%;
+  height: 100px;
+  border-radius: 10px;
+  text-align: cente;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: black;
+}
+article a{
+  text-decoration: none;
+  text-align: center;
+}
+
+article div{
+  border: 2px solid;
+  width: 90%;
+  height: 800px;
+  border-radius: 10px;
+  text-align: cente;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+article p{
+  border: 2px solid;
+  width: 90%;
+  
+  border-radius: 10px;
+  text-align: cente;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+main article div p {
+  background-color: rgba(255, 255, 255, 0.7); /* 배경색을 흰색으로 지정하고, 투명도를 0.7로 조절 */
+  font-weight: bold;
+color: black;}
+
+main{
+  background-color: #474444;
+}
+
+article span{
+  color: red;
+  font-size: x-large;
+}
+
+@media screen and (max-width:426px) {
+  article h2{
+    height: 10%;
+    overflow: hidden;
+    font-size: small;
+  }
+  article div{
+    overflow: hidden;
+    font-size: small;
+    height: 850px;
+  }
+  nav {
+    overflow: hidden;
+  }
+  article p{
+    margin: 10px;
+  }
+  .search-box input{
+    width: 200px;
+  }
+  .nav1 button{
+    transform: translate(-40px, -3px);
+  }
+  
+  }
+  @media screen and (max-width:1025px){
+    .search-box input{
+      width: 200px;
+    }
+  }
+  
