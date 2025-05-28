@@ -12,14 +12,7 @@ languageName = "English"
 title = "Quack Quack"
 weight = 1
 [languages.en.params.sidebar]
-subtitle = "Example description"
-
-[languages.zh-cn]
-languageName = "中文"
-title = "演示站点"
-weight = 2
-[languages.zh-cn.params.sidebar]
-subtitle = "演示说明"
+subtitle = "🦆🦆🦆🦆🦆🦆🦆"
 
 [services.disqus]
 shortname = "hugo-theme-stack"
@@ -179,16 +172,9 @@ enabled = true
 [[menu.social]]
 identifier = "github"
 name = "GitHub"
-url = "https://github.com/CaiJimmy/hugo-theme-stack"
+url = "https://github.com/eggzuxi"
 [menu.social.params]
 icon = "brand-github"
-
-[[menu.social]]
-identifier = "twitter"
-name = "Twitter"
-url = "https://twitter.com"
-[menu.social.params]
-icon = "brand-twitter"
 
 [related]
 includeNewer = true
