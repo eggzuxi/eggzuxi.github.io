@@ -1,1 +1,122 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quack Quack</title><link>https://example.com/</link><description>Recent content on Quack Quack</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Example Person</copyright><lastBuildDate/><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quack Quack</title><link>https://eggzuxi.github.io/</link><description>Recent content on Quack Quack</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Example Person</copyright><lastBuildDate>Mon, 02 Jun 2025 23:32:57 +0900</lastBuildDate><atom:link href="https://eggzuxi.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>AI와 클린코드</title><link>https://eggzuxi.github.io/posts/my-first-post/</link><pubDate>Mon, 02 Jun 2025 23:32:57 +0900</pubDate><guid>https://eggzuxi.github.io/posts/my-first-post/</guid><description>&lt;p>첫 포스팅 주제를 고민하던 중, 문득 개발자라면 누구나 써봤을 Chat GPT, Gemini 같은 AI 툴에 대한 이야기가 떠올랐습니다. 사실 저는 지금까지 AI 도구를 사용하지 않고 개발을 해본 적이 없을 정도로 AI에 익숙한 편인데, 오히려 그렇기 때문에 AI에 대한 경계를 늦추지 않으려 노력하고 있습니다. 이번 글에서는 프로젝트를 진행하면서 사용했던 AI 도구 활용 경험과 클린코드를 작성하기 위해 활용하는 기능을 이야기해보고자 합니다.&lt;/p>
+&lt;hr>
+&lt;h3 id="첫-번째-프로젝트">첫 번째 프로젝트
+&lt;/h3>&lt;p>서툴지만 열정은 있었던 &lt;del>ㅋㅋ&lt;/del> 첫 번째 프로젝트에서 사용했던 AI는 바로 &lt;strong>Locofy.ai&lt;/strong>였습니다.
+Figma의 플러그인으로 처음 접했는데, UI 디자인을 넘기면 바로 다양한 프로그래밍 언어로 코드 변환을 해주는 도구입니다. 뭔가 빠르게 결과물을 만들어주긴 하는데 막상 코드를 들여다보면 효율성이라고는 전혀 없는 👽alien code👽에 가까웠습니다. 이걸 사용하기 편하게 가공하는 작업이 필요했고, 나중엔 직접 코드를 작성할 걸 하는 후회가 들기도 했습니다.&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.locofy.ai/" target="_blank" rel="noopener"
+>Locofy.ai&lt;/a> 웹사이트에 오랜만에 들어가 보니 생각보다 많은 곳에서 사용되고 있었습니다&amp;hellip;?
+얼마나 바뀌었나 테스트해보고 싶어서 Figma로 다시 변환해 보려 했는데, 1년 전만 해도 무료였던 서비스가 지금은 다 유료로 바뀌어서 아쉽게도 다시 변환하는 건 포기했습니다. 유료는 조금 다른가..?&lt;/p>
+&lt;p>&lt;img src="https://eggzuxi.github.io/img/first-project.png"
+loading="lazy"
+alt="Locofy"
+>&lt;br>
+이땐 S3나 Tailwindcss를 잘 몰라서 그냥 퍼블릭 폴더에 사진을 다 때려 박고 외부 css 파일을 사용했습니다. 그런데 Locofy가 클래스명을 container1, div1 이런 식으로 짜줘서 겹치는 클래스명이 많았고 css가 깨지는 문제가 발생했습니다.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-css" data-lang="css">&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span>&lt;span class="nc">kiosc_p24&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">margin&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">position&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">absolute&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span>&lt;span class="nc">kiosc_p24&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">top&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">71&lt;/span>&lt;span class="kt">px&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">left&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">106&lt;/span>&lt;span class="kt">px&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;--color-gray-100&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span>&lt;span class="nc">kiosc_p25&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">margin-left&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">14&lt;/span>&lt;span class="kt">px&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">display&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">flex&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>결국 위 예시처럼 클래스명 앞에 어떤 페이지인지 이름을 다 달아줬는데 그것 또한 하나하나 직접 고쳤던 기억이 있습니다. 하루 종일 클래스명을 수정하면서 AI에 대한 불신이 조금 생겼던 것 같습니다.😅 이걸 어떻게 써? 하는 생각..?&lt;/p>
+&lt;hr>
+&lt;h3 id="두-번째-프로젝트">두 번째 프로젝트
+&lt;/h3>&lt;p>두 번째 프로젝트 개발 기간에는 기한 내에 완료해야 한다는 압박감에 코드의 질은 크게 생각하지 않았던 것 같아서 개인적으로 아쉬움이 많이 남습니다. 이때 처음으로 GPT 유료 버전을 사용해 보았는데 무료 버전이 뚝뚝 끊겨서 불편한 점을 제외하고는 크게 메리트가 있는지 잘 모르겠습니다.&lt;/p>
+&lt;p>하지만 한 가지 확실한 건, GPT가 없었다면 프로젝트를 제시간에 절대로 다 끝내지 못했을 겁니다. 필요한 정보를 빠르게 찾아주고, 막히는 부분에서 힌트를 얻는 등 개발 속도를 높이는 데 결정적인 역할을 해주었습니다. 다만 조금 답답했던 점은 있었습니다. 엔티티나 DTO 설계 시 빌더 패턴을 이용하고 setter 사용은 지양하는 코딩 컨벤션을 가지고 작업했는데, GPT에게 물어볼 때마다 setter를 사용하는 코드를 알려줘서 매번 다시 설명해주고 수정해야 했다는 점입니다. AI의 편리함 속에서도 개발자의 컨벤션과 의도를 명확히 전달하고 조율하는 과정이 필요하다는 걸 깨달았습니다.&lt;/p>
+&lt;hr>
+&lt;p>다양한 AI 도구를 사용하며 겪었던 시행착오 덕분에 이후 개인, 팀 사이드 프로젝트를 진행할 때는 단순히 빠르게 결과물을 만드는 것보다 코드의 질과 설계 방식에 더 깊이 있는 고민을 하게 되었습니다. 이는 궁극적으로 클린하고 유지 보수하기 쉬운 코드를 작성하는 것을 목표로 삼게 된 계기가 되었습니다.&lt;/p>
+&lt;p>JetBrain의 IntelliJ를 사용 중인데, 코드를 작성하면 중복되는 코드, 에러가 발생할 만한 코드, 더 좋은 방향으로 개선할 수 있는 코드에 경고⚠️가 발생합니다.&lt;/p>
+&lt;div style="display: flex; justify-content: left; align-items: center; gap: 20px;">
+&lt;img src="https://eggzuxi.github.io/img/intellij1.png" alt="IntelliJ1" style="max-width: 30%;">
+&lt;img src="https://eggzuxi.github.io/img/intellij2.png" alt="IntelliJ2" style="max-width: 40%;">
+&lt;/div>
+&lt;p>경고창을 마우스 우클릭하면 창이 하나 뜨는데,&lt;/p>
+&lt;p>&lt;img src="https://eggzuxi.github.io/img/intelliJ3.png"
+loading="lazy"
+alt="IntelliJ3"
+>&lt;/p>
+&lt;p>바로 해결할 수 있게 고쳐주기도 하고(항상 해결책이 뜨는 것은 아님) 경고 메시지를 복사할 수도 있습니다.
+버전 업데이트로 코드 작성 방식이 달라져서 GPT나 Gemini한테 아무리 물어봐도 해결책을 찾지 못할 때,
+&lt;em>Show Quick-Fixes&lt;/em>를 누르면 쉽게 해결되는 경우도 더러 있습니다.&lt;/p>
+&lt;p>물론 다른 글들을 읽어보면 이 경고가 거슬려서 특정 경고만 안 나타나게 설정하는 방법도 알려주고 하지만,
+아직 저는 이게 해결해야 하는 경고인지, 넘어가도 되는 경고인지 판단하는 능력이 부족해서 그냥 내버려두고 있습니다.&lt;/p>
+&lt;p>가장 최근에 이 기능 때문에 해결했던 예시를 들자면,
+테스트 코드 작성을 위해 &lt;strong>스프링 문서&lt;/strong>를 보면서 따라 하고 있었을 때입니다.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="nd">@WebMvcTest&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">GreetingController&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kd">class&lt;/span> &lt;span class="nc">WebMockTest&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nd">@Autowired&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kd">private&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">MockMvc&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">mockMvc&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nd">@MockBean&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c1">// 🚨에러 발생 위치&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kd">private&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">GreetingService&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">service&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nd">@Test&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kt">void&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">greetingShouldReturnMessageFromService&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kd">throws&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Exception&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">when&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">service&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">greet&lt;/span>&lt;span class="p">()).&lt;/span>&lt;span class="na">thenReturn&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Hello, Mock&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">this&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">mockMvc&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">perform&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">get&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;/greeting&amp;#34;&lt;/span>&lt;span class="p">)).&lt;/span>&lt;span class="na">andDo&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">print&lt;/span>&lt;span class="p">()).&lt;/span>&lt;span class="na">andExpect&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">status&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="na">isOk&lt;/span>&lt;span class="p">())&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">andExpect&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">content&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="na">string&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">containsString&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Hello, Mock&amp;#34;&lt;/span>&lt;span class="p">)));&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>분명 문서 그대로 작성했는데도
+&amp;lsquo;org.springframework.boot.test.mock.mockito.MockBean&amp;rsquo; is deprecated since version 3.4.0 and marked for removal이라는 에러가 발생했습니다. 에러 메시지만 봐도 알 수 있지만, 버전 업데이트가 되면서 테스트 클래스에 의존성 주입을 위해 사용했던 @MockBean 어노테이션이 Deprecated 되고 @MockitoBean을 사용해야 한다는 사실을 알게 되었습니다.&lt;/p>
+&lt;p>이러한 경험들을 통해 습관이 하나 생겼습니다.
+커밋 하기 전에 경고가 얼마나 있는지, 해결할 수 있는 경고인지, 해결할 수 있으면 그 코드를 조금이라도 더 보기 좋게 작성할 수는 없는지 고민하고 커밋을 한다는 것입니다. &lt;del>그렇게 대단한 건 아니지만 나름 도움 됨..&lt;/del>&lt;/p>
+&lt;hr>
+&lt;h3 id="마치며">&lt;strong>마치며&lt;/strong>
+&lt;/h3>&lt;p>AI 도구가 개발 생산성을 높이는 강력한 도구이긴 하지만, 개발자 스스로의 코드 품질과 설계 역량이 무엇보다 중요하다는 걸 잊지 않고, AI를 현명하게 활용하며 더욱 좋은 코드를 작성하기 위해 꾸준히 노력해야 할 것 같습니다.&lt;/p></description></item></channel></rss>
