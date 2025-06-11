@@ -1,0 +1,25 @@
+/* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */
+
+figure.intelliJ-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+figure.intelliJ1, figure.intelliJ2 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+figure.intelliJ1 {
+    padding: 4rem;
+    width: 50%;
+    height: auto;
+}
+
+figure.intelliJ2 {
+    padding: 4rem;
+    width: 50%;
+    height: auto;
+}
