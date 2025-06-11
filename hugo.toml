@@ -12,7 +12,7 @@ languageName = "English"
 title = "Quack Quack"
 weight = 1
 [languages.en.params.sidebar]
-subtitle = "🦆🦆🦆🦆🦆🦆🦆"
+subtitle = ""
 
 [services.disqus]
 shortname = "hugo-theme-stack"
