@@ -50,9 +50,9 @@ Figma의 플러그인으로 처음 접했는데, UI 디자인을 넘기면 바�
 
 JetBrain의 IntelliJ를 사용 중인데, 코드를 작성하면 중복되는 코드, 에러가 발생할 만한 코드, 더 좋은 방향으로 개선할 수 있는 코드에 경고⚠️가 발생합니다.  
 
-<div style="display: flex; justify-content: left; align-items: center; gap: 20px;">
-    <img src="/img/intellij1.png" alt="IntelliJ1" style="max-width: 30%;">
-    <img src="/img/intellij2.png" alt="IntelliJ2" style="max-width: 40%;">
+<div class="intelliJ-box">
+    {{< figure src="/img/intellij1.png" alt="IntelliJ1" class="intelliJ1" >}}
+    {{< figure src="/img/intellij2.png" alt="IntelliJ2" class="intelliJ2" >}}
 </div>
 
 
